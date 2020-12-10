@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taller clase 15</title>
+</head>
+
+<body>
+    <h1>Taller de arreglos</h1>
+
+    <!-- Ejercicio 12 -->
+    <h2>Ejercicio 12</h2>
+    <p class="text">12) Se tiene la siguiente información por cada una de las materias que cursa cada estudiante:
+        a. Código del estudiante.
+        b. Código de la materia.
+        c. Nota definitiva.
+        Primero debe pedir el número de estudiantes y el número de materias cursadas por cada estudiante. Elaborar un
+        algoritmo que muestre:
+        i. Código de cada estudiante.
+        ii. Número de materias cursadas.
+        iii. Nota mayor y en qué materia la obtuvo.
+    </p>
+    <label for="">Número de estudiantes.</label>
+    <br></br>
+    <input type="number" id="alg12_numStudents">
+    <br></br>
+    <label for="">Número de materias cursadas por cada estudiante.</label>
+    <br></br>
+    <input type="number" id="alg12_numSubjects">
+    <br></br>
+    <button onclick="alg12()">Registrar estudiantes</button>
+    <button onclick="alg12_print()">Imprimir datos leidos</button>
+    <!-- Ejercicio 11 -->
+    <h2>Ejercicio 11</h2>
+    <p class="text">Una gasolinera presta 4 clases de servicios. Al final del día se requiere determinar el valor
+        producido por cada clase de servicio, el número de veces que se prestó cada servicio, el servicio que más veces
+        se prestó y si éste se prestó más en la mañana, en la tarde o noche, y por último imprimir los nombres de los
+        compradores por cada servicio.</p>
+    <label for="">Clase de servicio prestado. (1,2,3, 4)</label>
+    <br></br>
+    <input type="text" id="alg11Type">
+    <br></br>
+    <label for="">Jornada en la que se prestó el servicio. (M: mañana, T: tarde, N: noche)</label>
+    <br></br>
+    <input type="text" id="alg11TimeOfDay">
+    <br></br>
+    <label for="">Valor del servicio.</label>
+    <br></br>
+    <input type="number" id="alg11Cost">
+    <br></br>
+    <label for="">Nombre del comprador.</label>
+    <br></br>
+    <input type="text" id="alg11BuyersName">
+    <br></br>
+    <button onclick="alg11()">Registrar servicio</button>
+    <button onclick="alg11_print()">Imprimir datos leidos</button>
+    <div class="solution">
+        <p id="answerAlg11"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 10 -->
+    <h2>Ejercicio 10</h2>
+    <p class="text">Se desea organizar una competencia de motociclismo, para la que se han establecido 5 categorías.</p>
+    <label for="">Categoría de la moto, las opciones son:
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </label>
+    <input type="text" id="alg10Category">
+    <br></br>
+    <label for="">Cilindraje de la moto, las opciones son:
+        <ul>
+            <li>1 (cilindrajes de motos hasta 100cc.)</li>
+            <li>2 (cilindrajes de motos de 101 cc hasta 250cc.)</li>
+            <li>3 (cilindrajes de motos de 251 cc hasta 350cc.)</li>
+            <li>4 (cilindrajes de motos de 351 cc hasta 500cc.)</li>
+            <li>5 (cilindrajes de motos mayores 500cc.)</li>
+        </ul>
+    </label>
+    <input type="text" id="alg10Cc">
+    <br></br>
+    <button onclick="alg10()">Registrar conductor</button>
+    <button onclick="alg10_print()">Imprimir datos leidos</button>
+    <div class="solution">
+        <p id="answerAlg10"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 9 -->
+    <h2>Ejercicio 9</h2>
+    <p class="text">9) Un restaurante paga a sus meseros dos clases de comisiones. Elaborar un algoritmo que obtenga el
+        total a pagar a cada uno de los meseros al final del día, debe mostrar el nombre y total comisión.</p>
+    <label for="">Nombre mesero. Escribir 1 para Anacleto, 2 para Valloleidys, y 3 para Temistocles.</label>
+    <br></br>
+    <input type="text" id="alg9Name">
+    <br></br>
+    <button class="big-button" onclick="alg9_register()">Agregar información del mesero</button>
+    <button onclick="alg9_print()">Mostrar datos leidos</button>
+    <div class="solution">
+        <p id="answerAlg9"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 8 -->
+    <h2>Ejercicio 8</h2>
+    <p class="text">Una oficina de seguros ha reunido datos concernientes a todos los accidentes de tránsito ocurridos
+        en Medellín en el último año. </p>
+    <label for="">Nombre</label>
+    <br></br>
+    <input type="text" id="alg8Name">
+    <br></br>
+    <label for="">Año de nacimiento</label>
+    <br></br>
+    <input type="number" id="alg8Number">
+    <br></br>
+    <label for="">Género. Escribe 1 para mujer y 2 para hombre.</label>
+    <br></br>
+    <input type="text" id="alg8Gender">
+    <br></br>
+    <label for="">Registro del carro. Escribe 1 para Medellín y 2 para otras ciudades.</label>
+    <br></br>
+    <input type="text" id="alg8Register">
+    <br></br>
+    <button onclick="alg8()">Registrar conductor</button>
+    <button onclick="alg8_print()">Imprimir datos leidos</button>
+    <button onclick="alg8_printResults()">Mostrar resultados</button>
+    <div class="solution">
+        <p id="answerAlg8"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 7 -->
+    <h2>Ejercicio 7</h2>
+    <p class="text">Rellene un array con 20 números al azar y luego busque un número concreto ingresado por el usuario,
+        si el número es encontrado debe imprimir la posición en el que se encontró, por el contrario, imprimir que el
+        número no se encontró.</p>
+    <h4>Los números son:</h4>
+    <p id="answerAlg7_1" class="result2"></p>
+    <label for="">Busca un número en particular</label>
+    <br></br>
+    <input type="number" id="alg7Number">
+    <button onclick="alg7()">Buscar</button>
+    <div class="solution">
+        <p id="answerAlg7_2"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 6 -->
+    <h2>Ejercicio 6</h2>
+    <p class="text">Lea 10 nombres por teclado, los almacena en un array, lea 10 edades de cada uno los almacena en un
+        array, y al final debe mostrar todos los nombres y todas las edades respectivamente. </p>
+    <button onclick="alg6()">Leer números</button>
+    <div class="solution">
+        <p id="answerAlg6"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 5 -->
+    <h2>Ejercicio 5</h2>
+    <p class="text">Lea 10 números por teclado, los almacene en un array y muestre el promedio.</p>
+    <button onclick="alg5()">Leer números</button>
+    <div class="solution">
+        <p id="answerAlg5"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 4 -->
+    <h2>Ejercicio 4</h2>
+    <p class="text">Lea 5 números por teclado, los copie a otro array multiplicados por 2 y muestre el segundo array.
+    </p>
+    <button onclick="alg4()">Leer números</button>
+    <div class="solution">
+        <p id="answerAlg4"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 3 -->
+    <h2>Ejercicio 3</h2>
+    <p class="text">3) lea 10 números por teclado, 5 para un array y 5 para otro array distinto. Mostrar los 10 números
+        en pantalla mediante un solo array.</p>
+    <button onclick="alg3()">Leer números</button>
+    <div class="solution">
+        <p id="answerAlg3"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 2 -->
+    <h2>Ejercicio 2</h2>
+    <p class="text">Llene un array de 10 enteros con números aleatorios del 0 al 99, luego de eso los muestre en
+        pantalla y diga cuál es el elemento mayor y cuántas veces se repite.</p>
+    <div class="solution">
+        <h4>Numeros</h4>
+        <p id="answerAlg2_1"></p>
+        <p id="answerAlg2_2"></p>
+    </div>
+    <div class="division"></div>
+
+    <!-- Ejercicio 1 -->
+    <h2>Ejercicio 1</h2>
+    <p class="text">Hacer un array de 100 enteros y rellenarlo con números aleatorios. Luego mostrarlos en pantalla.</p>
+    <div class="solution">
+        <p id="answerAlg1"></p>
+    </div>
+    <div class="division"></div>
+
+    <!------------- scripts ----------------->
+    <script src="main.js"></script>
+</body>
+
+</html>
